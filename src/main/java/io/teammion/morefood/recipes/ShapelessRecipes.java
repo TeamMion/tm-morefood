@@ -13,11 +13,11 @@ public class ShapelessRecipes
     {
         Registry.addShapelessRecipe(
                 new ItemStack(Items.milk_bottle, 4),
-                Items.milk_bucket,
-                Items.glass_bottle,
-                Items.glass_bottle,
-                Items.glass_bottle,
-                Items.glass_bottle
+                Items.MILK_BUCKET,
+                Items.GLASS_BOTTLE,
+                Items.GLASS_BOTTLE,
+                Items.GLASS_BOTTLE,
+                Items.GLASS_BOTTLE
         );
         
         Registry.addShapelessRecipe(
@@ -30,8 +30,8 @@ public class ShapelessRecipes
                 Items.milk_bottle,
                 Items.cocoaBean_ground,
                 Items.cocoaBean_ground,
-                Items.sugar,
-                Items.sugar
+                Items.SUGAR,
+                Items.SUGAR
         );
     }
 }

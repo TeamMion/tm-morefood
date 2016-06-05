@@ -21,16 +21,16 @@ public class ShapedRecipes
                 new ItemStack(Items.chocolate),
                 "AAA", "BCB", "AAA",
                 'A', Items.cocoaBean_ground,
-                'B', Items.sugar,
-                'C', Items.milk_bucket
+                'B', Items.SUGAR,
+                'C', Items.MILK_BUCKET
         );
         
         Registry.addShapedRecipe(
                 new ItemStack(Items.chocolate),
                 "ABA", "ACA", "ABA",
                 'A', Items.cocoaBean_ground,
-                'B', Items.sugar,
-                'C', Items.milk_bucket
+                'B', Items.SUGAR,
+                'C', Items.MILK_BUCKET
         );
     }
 }
