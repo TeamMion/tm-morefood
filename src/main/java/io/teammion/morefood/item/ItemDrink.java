@@ -33,7 +33,7 @@ public class ItemDrink extends ItemFood
     {
         stack.stackSize--;
         
-        ItemStack bottle = new ItemStack(Items.glass_bottle);
+        ItemStack bottle = new ItemStack(Items.GLASS_BOTTLE);
         if (! player.inventory.addItemStackToInventory(bottle))
         {
             worldIn.spawnEntityInWorld(new EntityItem(worldIn, player.posX, player.posY, player.posZ, bottle));
