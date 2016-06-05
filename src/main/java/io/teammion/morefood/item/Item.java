@@ -12,6 +12,6 @@ public class Item extends net.minecraft.item.Item
         setUnlocalizedName(name);
         setRegistryName(name);
         
-        setCreativeTab(CreativeTabs.tabFood);
+        setCreativeTab(CreativeTabs.FOOD);
     }
 }

@@ -14,7 +14,7 @@ public class ItemFood extends net.minecraft.item.ItemFood
         setUnlocalizedName(name);
         setRegistryName(name);
         
-        setCreativeTab(CreativeTabs.tabFood);
+        setCreativeTab(CreativeTabs.FOOD);
     }
     
     public ItemFood(String name, int amount, boolean isWolfFood)
@@ -24,6 +24,6 @@ public class ItemFood extends net.minecraft.item.ItemFood
         setUnlocalizedName(name);
         setRegistryName(name);
         
-        setCreativeTab(CreativeTabs.tabFood);
+        setCreativeTab(CreativeTabs.FOOD);
     }
 }
