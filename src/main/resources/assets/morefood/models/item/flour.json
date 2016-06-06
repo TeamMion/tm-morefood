@@ -1,6 +1,6 @@
 {
     "parent": "morefood:item/_default",
     "textures": {
-        "layer0": "morefood:items/cocoaBean_ground"
+        "layer0": "morefood:items/flour"
     }
 }

@@ -22,6 +22,11 @@ public class ItemDrink extends ItemFood
         super(name, amount, isWolfFood);
     }
     
+    public ItemDrink(String name, int amount)
+    {
+        super(name, amount);
+    }
+    
     @Override
     public EnumAction getItemUseAction(ItemStack stack)
     {

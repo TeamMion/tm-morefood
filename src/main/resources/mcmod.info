@@ -5,7 +5,7 @@
         "description": "",
         "version": "${version}",
         "mcversion": "${mcversion}",
-        "url": "",
+        "url": "https://github.com/teammion/morefood#readme",
         "updateUrl": "",
         "authorList": [ "Stefan Wimmer", "uriba" ],
         "credits": "Copyright (c) 2016, Team Mion",

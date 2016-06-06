@@ -13,7 +13,12 @@ public class SmeltingRecipes
     {
         Registry.addSmelting(
                 new ItemStack(Items.DYE, 1, 3),
-                new ItemStack(Items.cocoaBean_roasted), .8f
+                new ItemStack(Items.COCOA_BEAN_ROASTED)
+        );
+        
+        Registry.addSmelting(
+                Items.SCHNITZEL_RAW,
+                new ItemStack(Items.SCHNITZEL)
         );
     }
 }

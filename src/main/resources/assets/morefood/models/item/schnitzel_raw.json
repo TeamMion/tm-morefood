@@ -1,6 +1,6 @@
 {
     "parent": "morefood:item/_default",
     "textures": {
-        "layer0": "morefood:items/cocoaBean_roasted"
+        "layer0": "morefood:items/schnitzel_raw"
     }
 }

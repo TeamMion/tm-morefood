@@ -26,4 +26,14 @@ public class ItemFood extends net.minecraft.item.ItemFood
         
         setCreativeTab(CreativeTabs.FOOD);
     }
+    
+    public ItemFood(String name, int amount)
+    {
+        super(amount, false);
+        
+        setUnlocalizedName(name);
+        setRegistryName(name);
+        
+        setCreativeTab(CreativeTabs.FOOD);
+    }
 }

@@ -12,7 +12,7 @@ public class ShapelessRecipes
     public static void register()
     {
         Registry.addShapelessRecipe(
-                new ItemStack(Items.milk_bottle, 4),
+                new ItemStack(Items.MILK_BOTTLE, 4),
                 Items.MILK_BUCKET,
                 Items.GLASS_BOTTLE,
                 Items.GLASS_BOTTLE,
@@ -21,17 +21,30 @@ public class ShapelessRecipes
         );
         
         Registry.addShapelessRecipe(
-                new ItemStack(Items.chocolate_piece, 8),
-                Items.chocolate
+                new ItemStack(Items.CHOCOLATE_PIECE, 8),
+                Items.CHOCOLATE
         );
         
         Registry.addShapelessRecipe(
-                new ItemStack(Items.chocolate_drink),
-                Items.milk_bottle,
-                Items.cocoaBean_ground,
-                Items.cocoaBean_ground,
+                new ItemStack(Items.CHOCOLATE_DRINK),
+                Items.MILK_BOTTLE,
+                Items.COCOA_BEAN_GROUND,
+                Items.COCOA_BEAN_GROUND,
                 Items.SUGAR,
                 Items.SUGAR
+        );
+        
+        Registry.addShapelessRecipe(
+                new ItemStack(Items.FLOUR, 2),
+                Items.WHEAT
+        );
+        
+        Registry.addShapelessRecipe(
+                new ItemStack(Items.SCHNITZEL_RAW),
+                Items.PORKCHOP,
+                Items.EGG,
+                Items.FLOUR,
+                Items.FLOUR
         );
     }
 }

@@ -12,23 +12,23 @@ public class ShapedRecipes
     public static void register()
     {
         Registry.addShapedRecipe(
-                new ItemStack(Items.cocoaBean_ground),
+                new ItemStack(Items.COCOA_BEAN_GROUND),
                 "AA", "AA",
-                'A', Items.cocoaBean_roasted
+                'A', Items.COCOA_BEAN_ROASTED
         );
         
         Registry.addShapedRecipe(
-                new ItemStack(Items.chocolate),
+                new ItemStack(Items.CHOCOLATE),
                 "AAA", "BCB", "AAA",
-                'A', Items.cocoaBean_ground,
+                'A', Items.COCOA_BEAN_GROUND,
                 'B', Items.SUGAR,
                 'C', Items.MILK_BUCKET
         );
         
         Registry.addShapedRecipe(
-                new ItemStack(Items.chocolate),
+                new ItemStack(Items.CHOCOLATE),
                 "ABA", "ACA", "ABA",
-                'A', Items.cocoaBean_ground,
+                'A', Items.COCOA_BEAN_GROUND,
                 'B', Items.SUGAR,
                 'C', Items.MILK_BUCKET
         );

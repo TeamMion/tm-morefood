@@ -10,30 +10,39 @@ import io.teammion.morefood.item.ItemMilkBottle;
  */
 public class Items extends net.minecraft.init.Items
 {
-    public static final ItemMilkBottle milk_bottle = new ItemMilkBottle();
-    public static final Item cocoaBean_roasted = new Item("cocoaBean_roasted");
-    public static final Item cocoaBean_ground = new Item("cocoaBean_ground");
-    public static final ItemFood chocolate = new ItemFood("chocolate", 8, false);
-    public static final ItemFood chocolate_piece = new ItemFood("chocolate_piece", 1, false);
-    public static final ItemDrink chocolate_drink = new ItemDrink("chocolate_drink", 4, false);
+    public static final ItemMilkBottle MILK_BOTTLE = new ItemMilkBottle();
+    public static final Item COCOA_BEAN_ROASTED = new Item("cocoa_bean_roasted");
+    public static final Item COCOA_BEAN_GROUND = new Item("cocoa_bean_ground");
+    public static final ItemFood CHOCOLATE = new ItemFood("chocolate", 8);
+    public static final ItemFood CHOCOLATE_PIECE = new ItemFood("chocolate_piece", 1);
+    public static final ItemDrink CHOCOLATE_DRINK = new ItemDrink("chocolate_drink", 4);
+    public static final Item FLOUR = new Item("flour");
+    public static final Item SCHNITZEL_RAW = new Item("schnitzel_raw");
+    public static final ItemFood SCHNITZEL = new ItemFood("schnitzel", 4);
     
     public static void register()
     {
-        Registry.register(milk_bottle);
-        Registry.register(cocoaBean_roasted);
-        Registry.register(cocoaBean_ground);
-        Registry.register(chocolate);
-        Registry.register(chocolate_piece);
-        Registry.register(chocolate_drink);
+        Registry.register(MILK_BOTTLE);
+        Registry.register(COCOA_BEAN_ROASTED);
+        Registry.register(COCOA_BEAN_GROUND);
+        Registry.register(CHOCOLATE);
+        Registry.register(CHOCOLATE_PIECE);
+        Registry.register(CHOCOLATE_DRINK);
+        Registry.register(FLOUR);
+        Registry.register(SCHNITZEL_RAW);
+        Registry.register(SCHNITZEL);
     }
     
     public static void render()
     {
-        Registry.render(milk_bottle);
-        Registry.render(cocoaBean_roasted);
-        Registry.render(cocoaBean_ground);
-        Registry.render(chocolate);
-        Registry.render(chocolate_piece);
-        Registry.render(chocolate_drink);
+        Registry.render(MILK_BOTTLE);
+        Registry.render(COCOA_BEAN_ROASTED);
+        Registry.render(COCOA_BEAN_GROUND);
+        Registry.render(CHOCOLATE);
+        Registry.render(CHOCOLATE_PIECE);
+        Registry.render(CHOCOLATE_DRINK);
+        Registry.render(FLOUR);
+        Registry.render(SCHNITZEL_RAW);
+        Registry.render(SCHNITZEL);
     }
 }
