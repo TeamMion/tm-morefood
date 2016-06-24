@@ -1,9 +1,12 @@
 item.milk_bottle.name=Milk Bottle
-item.cocoaBean_roasted.name=Roasted Cocoa Bean
-item.cocoaBean_ground.name=Ground Cocoa Bean
+item.cocoa_bean_roasted.name=Roasted Cocoa Bean
+item.cocoa_bean_ground.name=Ground Cocoa Bean
 item.chocolate.name=Chocolate
 item.chocolate_piece.name=Chocolate Piece
 item.chocolate_drink.name=Chocolate Drink
 item.flour.name=Flour
 item.schnitzel_raw.name=Raw Schnitzel
 item.schnitzel.name=Schnitzel
+item.egg_boiled.name=Boiled Egg
+item.apple_chocolate.name=Apple + Chocolate
+item.apple_chocolate_coated.name=Chocolate Coated Apple

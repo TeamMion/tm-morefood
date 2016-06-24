@@ -5,11 +5,11 @@ package io.teammion.morefood;
  */
 public class Blocks extends net.minecraft.init.Blocks
 {
-    public static void register()
+    static void register()
     {
     }
     
-    public static void render()
+    static void render()
     {
     }
 }

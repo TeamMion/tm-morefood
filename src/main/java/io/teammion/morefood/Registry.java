@@ -29,15 +29,15 @@ public class Registry extends GameRegistry
     public static void addSmelting(Item item, ItemStack stack)
     {
         addSmelting(item, stack, .8f);
-    };
+    }
     
     public static void addSmelting(ItemStack stack0, ItemStack stack1)
     {
         addSmelting(stack0, stack1, .8f);
-    };
+    }
     
     public static void addSmelting(Block item, ItemStack stack)
     {
         addSmelting(item, stack, .8f);
-    };
+    }
 }

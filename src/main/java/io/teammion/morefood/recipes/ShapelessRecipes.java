@@ -46,5 +46,12 @@ public class ShapelessRecipes
                 Items.FLOUR,
                 Items.FLOUR
         );
+        
+        Registry.addShapelessRecipe(
+                new ItemStack(Items.APPLE_CHOCOLATE),
+                Items.APPLE,
+                Items.CHOCOLATE_PIECE,
+                Items.CHOCOLATE_PIECE
+        );
     }
 }

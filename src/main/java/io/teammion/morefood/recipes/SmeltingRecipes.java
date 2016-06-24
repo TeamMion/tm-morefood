@@ -20,5 +20,15 @@ public class SmeltingRecipes
                 Items.SCHNITZEL_RAW,
                 new ItemStack(Items.SCHNITZEL)
         );
+        
+        Registry.addSmelting(
+                Items.EGG,
+                new ItemStack(Items.EGG_BOILED)
+        );
+        
+        Registry.addSmelting(
+                Items.APPLE_CHOCOLATE,
+                new ItemStack(Items.APPLE_CHOCOLATE_COATED)
+        );
     }
 }
