@@ -53,5 +53,13 @@ public class ShapelessRecipes
                 Items.CHOCOLATE_PIECE,
                 Items.CHOCOLATE_PIECE
         );
+        
+        Registry.addShapelessRecipe(
+                new ItemStack(Items.FISH_STICK_RAW),
+                Items.FISH,
+                Items.EGG,
+                Items.FLOUR,
+                Items.FLOUR
+        );
     }
 }

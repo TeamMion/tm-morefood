@@ -7,8 +7,8 @@ import net.minecraft.item.Item;
  */
 public abstract class CreativeTabs extends net.minecraft.creativetab.CreativeTabs
 {
-    public static final CreativeTabs MOREFOOD_ITEMS = new Impl("morefood", Items.COCOA_BEAN_GROUND);
-    public static final CreativeTabs MOREFOOD_FOOD = new Impl("morefood", Items.CHOCOLATE);
+    // public static final CreativeTabs MOREFOOD_ITEMS = new Impl("morefood_items", Items.COCOA_BEAN_GROUND);
+    // public static final CreativeTabs MOREFOOD_FOOD = new Impl("morefood_food", Items.CHOCOLATE);
     
     public CreativeTabs(String label, Item tabIconItem)
     {

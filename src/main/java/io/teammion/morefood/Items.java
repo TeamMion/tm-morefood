@@ -22,6 +22,8 @@ public class Items extends net.minecraft.init.Items
     public static final ItemFood EGG_BOILED = new ItemFood("egg_boiled", 3);
     public static final Item APPLE_CHOCOLATE = new Item("apple_chocolate");
     public static final ItemFood APPLE_CHOCOLATE_COATED = new ItemFood("apple_chocolate_coated", 8);
+    public static final Item FISH_STICK_RAW = new Item("fish_stick_raw");
+    public static final ItemFood FISH_STICK = new ItemFood("fish_stick", 6);
     
     static void register()
     {
@@ -37,6 +39,8 @@ public class Items extends net.minecraft.init.Items
         Registry.register(EGG_BOILED);
         Registry.register(APPLE_CHOCOLATE);
         Registry.register(APPLE_CHOCOLATE_COATED);
+        Registry.register(FISH_STICK_RAW);
+        Registry.register(FISH_STICK);
     }
     
     static void render()
@@ -53,5 +57,7 @@ public class Items extends net.minecraft.init.Items
         Registry.render(EGG_BOILED);
         Registry.render(APPLE_CHOCOLATE);
         Registry.render(APPLE_CHOCOLATE_COATED);
+        Registry.render(FISH_STICK_RAW);
+        Registry.render(FISH_STICK);
     }
 }

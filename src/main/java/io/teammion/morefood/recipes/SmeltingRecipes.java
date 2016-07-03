@@ -30,5 +30,10 @@ public class SmeltingRecipes
                 Items.APPLE_CHOCOLATE,
                 new ItemStack(Items.APPLE_CHOCOLATE_COATED)
         );
+        
+        Registry.addSmelting(
+                Items.FISH_STICK_RAW,
+                new ItemStack(Items.FISH_STICK)
+        );
     }
 }

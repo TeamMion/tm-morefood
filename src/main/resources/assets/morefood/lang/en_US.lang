@@ -1,3 +1,6 @@
+itemGroup.morefood_items=MoreFood: Items
+itemGroup.morefood_food=MoreFood: Food
+
 item.milk_bottle.name=Milk Bottle
 item.cocoa_bean_roasted.name=Roasted Cocoa Bean
 item.cocoa_bean_ground.name=Ground Cocoa Bean
@@ -10,3 +13,5 @@ item.schnitzel.name=Schnitzel
 item.egg_boiled.name=Boiled Egg
 item.apple_chocolate.name=Apple + Chocolate
 item.apple_chocolate_coated.name=Chocolate Coated Apple
+item.fish_stick_raw.name=Raw Fish Stick
+item.fish_stick.name=Fish Stick
