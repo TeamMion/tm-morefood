@@ -1,0 +1,6 @@
+{
+    "parent": "morefood:item/_default",
+    "textures": {
+        "layer0": "morefood:items/apple_chocolate_coated"
+    }
+}
