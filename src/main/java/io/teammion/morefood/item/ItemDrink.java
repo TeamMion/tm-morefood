@@ -41,7 +41,16 @@ public class ItemDrink extends ItemFood
         ItemStack bottle = new ItemStack(Items.GLASS_BOTTLE);
         if (! player.inventory.addItemStackToInventory(bottle))
         {
-            worldIn.spawnEntityInWorld(new EntityItem(worldIn, player.posX, player.posY, player.posZ, bottle));
+            if (! worldIn.isRemote)
+            {
+                worldIn.spawnEntityInWorld(new EntityItem(
+                        worldIn,
+                        player.posX,
+                        player.posY,
+                        player.posZ,
+                        bottle
+                ));
+            }
         }
         
         super.onFoodEaten(stack, worldIn, player);
