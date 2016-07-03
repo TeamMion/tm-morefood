@@ -9,7 +9,7 @@
         "updateUrl": "",
         "authorList": [ "Stefan Wimmer", "uriba" ],
         "credits": "Copyright (c) 2016, Team Mion",
-        "logoFile": "",
+        "logoFile": "logo.png",
         "screenshots": [],
         "dependencies": []
     }
