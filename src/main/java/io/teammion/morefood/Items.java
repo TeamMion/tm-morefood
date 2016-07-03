@@ -1,9 +1,6 @@
 package io.teammion.morefood;
 
-import io.teammion.morefood.item.Item;
-import io.teammion.morefood.item.ItemDrink;
-import io.teammion.morefood.item.ItemFood;
-import io.teammion.morefood.item.ItemMilkBottle;
+import io.teammion.morefood.item.*;
 
 /**
  * Created by Stefan Wimmer <stefanwimmer128@gmail.com> on 05.06.16.
@@ -24,6 +21,7 @@ public class Items extends net.minecraft.init.Items
     public static final ItemFood APPLE_CHOCOLATE_COATED = new ItemFood("apple_chocolate_coated", 8);
     public static final Item FISH_STICK_RAW = new Item("fish_stick_raw");
     public static final ItemFood FISH_STICK = new ItemFood("fish_stick", 6);
+    public static final ItemFood STRAWBERRY = new ItemStrawberry();
     
     static void register()
     {
@@ -41,6 +39,7 @@ public class Items extends net.minecraft.init.Items
         Registry.register(APPLE_CHOCOLATE_COATED);
         Registry.register(FISH_STICK_RAW);
         Registry.register(FISH_STICK);
+        Registry.register(STRAWBERRY);
     }
     
     static void render()
@@ -59,5 +58,6 @@ public class Items extends net.minecraft.init.Items
         Registry.render(APPLE_CHOCOLATE_COATED);
         Registry.render(FISH_STICK_RAW);
         Registry.render(FISH_STICK);
+        Registry.render(STRAWBERRY);
     }
 }

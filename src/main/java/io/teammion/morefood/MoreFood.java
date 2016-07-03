@@ -3,6 +3,7 @@ package io.teammion.morefood;
 import io.teammion.morefood.recipes.ShapedRecipes;
 import io.teammion.morefood.recipes.ShapelessRecipes;
 import io.teammion.morefood.recipes.SmeltingRecipes;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -30,6 +31,8 @@ public class MoreFood
         ShapedRecipes.register();
         ShapelessRecipes.register();
         SmeltingRecipes.register();
+        
+        MinecraftForge.EVENT_BUS.register(new EventHandler());
     }
     
     @Mod.EventHandler
