@@ -32,5 +32,14 @@ public class ShapedRecipes
                 'B', Items.SUGAR,
                 'C', Items.MILK_BUCKET
         );
+        
+        Registry.addShapedRecipe(
+                new ItemStack(Items.SANDWICH_SCHNITZEL),
+                "A",
+                "B",
+                "A",
+                'A', Items.BREAD_SLICE,
+                'B', Items.SCHNITZEL
+        );
     }
 }

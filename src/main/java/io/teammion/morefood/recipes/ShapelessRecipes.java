@@ -61,5 +61,10 @@ public class ShapelessRecipes
                 Items.FLOUR,
                 Items.FLOUR
         );
+        
+        Registry.addShapelessRecipe(
+                new ItemStack(Items.BREAD_SLICE, 2),
+                Items.BREAD
+        );
     }
 }
