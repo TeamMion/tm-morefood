@@ -39,5 +39,26 @@ public class ShapedRecipes
                 'A', Items.BREAD_SLICE,
                 'B', Items.SCHNITZEL
         );
+        
+        Registry.addShapedRecipe(
+                new ItemStack(Items.SANDWICH_PORKCHOP),
+                "A", "B", "A",
+                'A', Items.BREAD_SLICE,
+                'B', Items.PORKCHOP
+        );
+        
+        Registry.addShapedRecipe(
+                new ItemStack(Items.SANDWICH_CHICKEN),
+                "A", "B", "A",
+                'A', Items.BREAD_SLICE,
+                'B', Items.COOKED_CHICKEN
+        );
+        
+        Registry.addShapedRecipe(
+                new ItemStack(Items.SANDWICH_FISH),
+                "A", "B", "A",
+                'A', Items.BREAD_SLICE,
+                'B', Items.COOKED_FISH
+        );
     }
 }

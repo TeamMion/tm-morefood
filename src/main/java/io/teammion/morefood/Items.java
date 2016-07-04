@@ -26,6 +26,9 @@ public class Items extends net.minecraft.init.Items
     public static final ItemFood FISH_STICK = new ItemFood("fish_stick", 6);
     public static final Item BREAD_SLICE = new Item("bread_slice");
     public static final ItemFood SANDWICH_SCHNITZEL = new ItemFood("sandwich_schnitzel", 5);
+    public static final ItemFood SANDWICH_PORKCHOP = new ItemFood("sandwich_porkchop", 5);
+    public static final ItemFood SANDWICH_CHICKEN = new ItemFood("sandwich_chicken", 5);
+    public static final ItemFood SANDWICH_FISH = new ItemFood("sandwich_fish", 5);
     
     static void register()
     {
@@ -45,6 +48,9 @@ public class Items extends net.minecraft.init.Items
         Registry.register(FISH_STICK);
         Registry.register(BREAD_SLICE);
         Registry.register(SANDWICH_SCHNITZEL);
+        Registry.register(SANDWICH_PORKCHOP);
+        Registry.register(SANDWICH_CHICKEN);
+        Registry.register(SANDWICH_FISH);
     }
     
     static void render()
@@ -65,5 +71,8 @@ public class Items extends net.minecraft.init.Items
         Registry.render(FISH_STICK);
         Registry.render(BREAD_SLICE);
         Registry.render(SANDWICH_SCHNITZEL);
+        Registry.render(SANDWICH_PORKCHOP);
+        Registry.render(SANDWICH_CHICKEN);
+        Registry.render(SANDWICH_FISH);
     }
 }
