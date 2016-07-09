@@ -5,7 +5,7 @@
         "description": "",
         "version": "${version}",
         "mcversion": "${mcversion}",
-        "url": "https://github.com/teammion/morefood#readme",
+        "url": "http://minecraft.curseforge.com/projects/tm-morefood",
         "updateUrl": "",
         "authorList": [ "Stefan Wimmer", "uriba" ],
         "credits": "Copyright (c) 2016, Team Mion",
