@@ -26,7 +26,7 @@ public class EventHandler
                     e.getEntity().posX,
                     e.getEntity().posY,
                     e.getEntity().posZ,
-                    new ItemStack(Items.STRAWBERRY, new Random().nextInt(3))
+                    new ItemStack(Items.STRAWBERRY, new Random().nextInt(2))
             ));
         }
     }
