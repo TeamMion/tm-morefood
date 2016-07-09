@@ -1,9 +1,6 @@
 package io.teammion.morefood;
 
-import io.teammion.morefood.item.Item;
-import io.teammion.morefood.item.ItemDrink;
-import io.teammion.morefood.item.ItemFood;
-import io.teammion.morefood.item.ItemMilkBottle;
+import io.teammion.morefood.item.*;
 
 /**
  * Created by Stefan Wimmer <stefanwimmer128@gmail.com> on 05.06.16.
