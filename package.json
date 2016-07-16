@@ -3,7 +3,11 @@
   "version": "1.0.0-rc.1",
   "description": "This Minecraft Mod will add additional food to Mincraft to provide a healthy variety.",
   "scripts": {
-    "build": "./build.sh"
+    "setup": "./setup.sh",
+    "build": "./build.sh",
+    "update": "./update.sh",
+    "client": "./gradlew runClient",
+    "server": "./gradlew runServer"
   },
   "repository": {
     "type": "git",

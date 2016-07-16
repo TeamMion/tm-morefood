@@ -21,11 +21,11 @@ plugins {
 }
 */
 version = "1.0.0-rc.1"
-group = "io.teammion.morefood" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = "io.teammion.morefood"
 archivesBaseName = "morefood"
 
 minecraft {
-    version = "1.10.2-12.18.0.2009"
+    version = "1.10.2-12.18.1.2014"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.

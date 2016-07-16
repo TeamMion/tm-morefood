@@ -1,17 +1,8 @@
 #!/usr/bin/env bash
 
-# Get version
-version="$(node <<< "console.log(require(\"./package.json\").version);")"
+# Update
+npm run update
 
-# Write version
-while IFS="" read line
-do
-    if [ "${line:0:10}" == "version = " ]
-    then
-        old_version="${line}"
-    fi
-done < build.gradle
-sed -i "/${old_version}/c\version = \"${version}\"" build.gradle
-
-# Build
+# Executing gradlew
+echo "Executing gradlew..."
 ./gradlew clean build

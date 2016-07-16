@@ -1,17 +1,30 @@
 # MoreFood
 
-All releases are currently located here: [MoreFood Releases](https://github.com/teammion/morefood/releases)
+For more information visit the [Curse Project](http://minecraft.curseforge.com/projects/tm-morefood)
 
 ## How to contribute?
 
-1. Get [Git](https://git-scm.com)
-2. [Fork repository](https://github.com/teammion/morefood/fork)
-3. Clone repository using git: `git clone [your-fork-url]`
-4. Setup Minecraft Forge MDK: `./gardlew setupDecompWorkspace`
-5. Setup your IDE: `./gradlew [idea|eclipse|...]`
-6. Start coding
-7. Push to your forked repository: `git push origin master`
-8. [Create Pull Request](https://github.com/teammion/morefood/compare)
-9. Repeate steps 6 to 9
-  1. To update your code add upstream-remote `git remote add upstream https://github.com/teammion/morefood.git` (This is only needed once)
-  2. To update from upstram-remote: `git pull upstream master`
+### Prerequisites
+
+- Node, NPM
+- Git (On windows: Git Bash)
+
+### How to do it
+
+Since I'm using a customized build system, I should tell you how to use it.
+
+``` bash
+# Setup gradle workspace and configure for IDE
+npm run setup
+
+# Run Minecraft Client
+npm run client
+
+# Run Minecraft Server
+npm run server
+
+# Build project
+npm run build
+```
+
+The version must be changed in the "package.json" file.
