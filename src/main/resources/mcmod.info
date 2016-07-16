@@ -10,7 +10,7 @@
         "authorList": [ "Stefan Wimmer", "uriba" ],
         "credits": "Copyright (c) 2016, Team Mion",
         "logoFile": "logo.png",
-        "screenshots": [],
+        "screenshots": [ "items.png" ],
         "dependencies": []
     }
 ]

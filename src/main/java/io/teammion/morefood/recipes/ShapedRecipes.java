@@ -44,7 +44,7 @@ public class ShapedRecipes
                 new ItemStack(Items.SANDWICH_PORKCHOP),
                 "A", "B", "A",
                 'A', Items.BREAD_SLICE,
-                'B', Items.PORKCHOP
+                'B', Items.COOKED_PORKCHOP
         );
         
         Registry.addShapedRecipe(
