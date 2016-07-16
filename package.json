@@ -1,6 +1,6 @@
 {
   "name": "morefood",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2",
   "description": "This Minecraft Mod will add additional food to Mincraft to provide a healthy variety.",
   "scripts": {
     "setup": "./setup.sh",

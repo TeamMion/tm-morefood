@@ -66,5 +66,12 @@ public class ShapelessRecipes
                 new ItemStack(Items.BREAD_SLICE, 2),
                 Items.BREAD
         );
+        
+        Registry.addShapelessRecipe(
+                new ItemStack(Items.STRAWBERRY_CHOCOLATE),
+                Items.STRAWBERRY,
+                Items.CHOCOLATE_PIECE,
+                Items.CHOCOLATE_PIECE
+        );
     }
 }
