@@ -40,5 +40,10 @@ public class SmeltingRecipes
                 Items.STRAWBERRY_CHOCOLATE,
                 new ItemStack(Items.STRAWBERRY_CHOCOLATE_COATED)
         );
+        
+        Registry.addSmelting(
+                Items.FRENCH_FRIES_RAW,
+                new ItemStack(Items.FRENCH_FRIES)
+        );
     }
 }

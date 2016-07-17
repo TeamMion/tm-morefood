@@ -29,6 +29,8 @@ public class Items extends net.minecraft.init.Items
     public static final ItemFood STRAWBERRY = new ItemStrawberry();
     public static final Item STRAWBERRY_CHOCOLATE = new Item("strawberry_chocolate");
     public static final ItemFood STRAWBERRY_CHOCOLATE_COATED = new ItemFood("strawberry_chocolate_coated", 8);
+    public static final Item FRENCH_FRIES_RAW = new Item("french_fries_raw");
+    public static final ItemFood FRENCH_FRIES = new ItemFood("french_fries", 6);
     
     static void register()
     {
@@ -54,6 +56,8 @@ public class Items extends net.minecraft.init.Items
         Registry.register(STRAWBERRY);
         Registry.register(STRAWBERRY_CHOCOLATE);
         Registry.register(STRAWBERRY_CHOCOLATE_COATED);
+        Registry.register(FRENCH_FRIES_RAW);
+        Registry.register(FRENCH_FRIES);
     }
     
     static void render()
@@ -80,5 +84,7 @@ public class Items extends net.minecraft.init.Items
         Registry.render(STRAWBERRY);
         Registry.render(STRAWBERRY_CHOCOLATE);
         Registry.render(STRAWBERRY_CHOCOLATE_COATED);
+        Registry.render(FRENCH_FRIES_RAW);
+        Registry.render(FRENCH_FRIES);
     }
 }

@@ -18,10 +18,6 @@ sed -i "/$old_version/c\version = \"$version\"" build.gradle
 sed -i "/group/c\group = \"io.teammion.morefood\"" build.gradle
 sed -i "/archivesBaseName/c\archivesBaseName = \"$modid\"" build.gradle
 
-# Update MoreFood.java
-echo "Updating MoreFood.java..."
-sed -i "/@Mod(/c\@Mod(modid = \"$modid\")" src/main/java/io/teammion/morefood/MoreFood.java
-
 # Update mcmod.info
 echo "Updating mcmod.info..."
 sed -i "/modid/c\        \"modid\": \"$modid\"," src/main/resources/mcmod.info

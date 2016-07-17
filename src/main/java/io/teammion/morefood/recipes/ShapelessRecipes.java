@@ -73,5 +73,11 @@ public class ShapelessRecipes
                 Items.CHOCOLATE_PIECE,
                 Items.CHOCOLATE_PIECE
         );
+        
+        Registry.addShapelessRecipe(
+                new ItemStack(Items.FRENCH_FRIES_RAW, 8),
+                Items.POTATO,
+                Items.POTATO
+        );
     }
 }

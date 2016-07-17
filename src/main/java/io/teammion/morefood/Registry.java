@@ -21,7 +21,7 @@ public class Registry extends GameRegistry
     {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(
                 item, meta, new ModelResourceLocation(
-                        "morefood:" + modelResourceLocation, "inventory"
+                        "tm-morefood:" + modelResourceLocation, "inventory"
                 )
         );
     }
