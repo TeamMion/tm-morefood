@@ -1,6 +1,6 @@
 [
     {
-        "modid": "morefood",
+        "modid": "tm-morefood",
         "name": "MoreFood",
         "description": "",
         "version": "${version}",

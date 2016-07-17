@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 /**
  * Created by Stefan Wimmer <stefanwimmer128@gmail.com> on 05.06.16.
  */
-@Mod(modid = "morefood")
+@Mod(modid = "tm-morefood")
 public class MoreFood
 {
     @Mod.EventHandler

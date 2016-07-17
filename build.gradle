@@ -20,9 +20,9 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "1.0.0-rc.3"
+version = "1.0.0-rc.4"
 group = "io.teammion.morefood"
-archivesBaseName = "morefood"
+archivesBaseName = "tm-morefood"
 
 minecraft {
     version = "1.10.2-12.18.1.2014"
@@ -40,8 +40,8 @@ minecraft {
 dependencies {
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
-    //compile "some.group:artifact:version:classifier"
-    //compile "some.group:artifact:version"
+group = "io.teammion.morefood"
+group = "io.teammion.morefood"
       
     // real examples
     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env

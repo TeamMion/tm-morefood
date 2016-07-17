@@ -1,6 +1,6 @@
 {
-  "name": "morefood",
-  "version": "1.0.0-rc.3",
+  "name": "tm-morefood",
+  "version": "1.0.0-rc.4",
   "description": "This Minecraft Mod will add additional food to Mincraft to provide a healthy variety.",
   "scripts": {
     "setup": "./setup.sh",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/teammion/morefood.git"
+    "url": "git+https://github.com/teammion/tm-morefood.git"
   },
   "keywords": [
     "morefood"
@@ -19,7 +19,7 @@
   "author": "Stefan Wimmer <stefanwimmer128@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/teammion/morefood/issues"
+    "url": "https://github.com/teammion/tm-morefood/issues"
   },
-  "homepage": "https://github.com/teammion/morefood#readme"
+  "homepage": "https://github.com/teammion/tm-morefood#readme"
 }

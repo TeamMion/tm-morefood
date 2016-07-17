@@ -2,9 +2,6 @@
 
 # Update
 npm run update
-sed -i "/group = */c\group = \"io.teammion.morefood\"" build.gradle
-sed -i "/group= */c\group = \"io.teammion.morefood\"" build.gradle
-sed -i "/archivesBaseName = */c\archivesBaseName = \"morefood\"" build.gradle
 
 # IDE to configure for
 read -p "IDE to configure for: [idea|eclipse] " ide
