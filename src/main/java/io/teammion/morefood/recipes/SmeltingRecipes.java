@@ -45,5 +45,10 @@ public class SmeltingRecipes
                 Items.FRENCH_FRIES_RAW,
                 new ItemStack(Items.FRENCH_FRIES)
         );
+        
+        Registry.addSmelting(
+                Items.BREAD_DOUGH,
+                new ItemStack(Items.BREAD)
+        );
     }
 }

@@ -1,5 +1,6 @@
 package io.teammion.morefood.recipes;
 
+import io.teammion.morefood.Config;
 import io.teammion.morefood.Items;
 import io.teammion.morefood.Registry;
 import net.minecraft.item.ItemStack;
@@ -78,6 +79,15 @@ public class ShapelessRecipes
                 new ItemStack(Items.FRENCH_FRIES_RAW, 8),
                 Items.POTATO,
                 Items.POTATO
+        );
+        
+        Registry.addShapelessRecipe(
+                new ItemStack(Items.BREAD_DOUGH, 2),
+                Items.FLOUR,
+                Items.FLOUR,
+                Items.FLOUR,
+                Items.FLOUR,
+                Items.WATER_BUCKET
         );
     }
 }

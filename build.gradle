@@ -12,6 +12,7 @@ buildscript {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
     }
 }
+
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 /*
@@ -20,12 +21,15 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "1.1.0"
+version = "1.2.0"
 group = "io.teammion.morefood"
 archivesBaseName = "tm-morefood"
 
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
 minecraft {
-    version = "1.10.2-12.18.1.2014"
+    version = "1.10.2-12.18.1.2018"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -40,8 +44,8 @@ minecraft {
 dependencies {
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
-group = "io.teammion.morefood"
-group = "io.teammion.morefood"
+    //compile "some.group:artifact:version:classifier"
+    //compile "some.group:artifact:version"
       
     // real examples
     //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
