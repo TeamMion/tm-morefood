@@ -8,17 +8,17 @@ import net.minecraft.item.ItemStack
   */
 object ShapedRecipes
 {
-    def register()
+    def register() : Unit =
     {
         Registry.addShapedRecipe(
-            new ItemStack(Items.COCOA_BEAN_GROUND),
+            Items.COCOA_BEAN_GROUND.stack,
             "AA",
             "AA",
             char2Character('A'), Items.COCOA_BEAN_ROASTED
         )
         
         Registry.addShapedRecipe(
-            new ItemStack(Items.CHOCOLATE),
+            Items.CHOCOLATE.stack,
             "AAA",
             "BCB",
             "AAA",
@@ -28,7 +28,7 @@ object ShapedRecipes
         )
         
         Registry.addShapedRecipe(
-            new ItemStack(Items.CHOCOLATE),
+            Items.CHOCOLATE.stack,
             "ABA",
             "ACA",
             "ABA",
@@ -38,7 +38,7 @@ object ShapedRecipes
         )
         
         Registry.addShapedRecipe(
-            new ItemStack(Items.SANDWICH_SCHNITZEL),
+            Items.SANDWICH_SCHNITZEL.stack,
             "A",
             "B",
             "A",
@@ -47,7 +47,7 @@ object ShapedRecipes
         )
         
         Registry.addShapedRecipe(
-            new ItemStack(Items.SANDWICH_PORKCHOP),
+            Items.SANDWICH_PORKCHOP.stack,
             "A",
             "B",
             "A",
@@ -56,7 +56,7 @@ object ShapedRecipes
         )
         
         Registry.addShapedRecipe(
-            new ItemStack(Items.SANDWICH_CHICKEN),
+            Items.SANDWICH_CHICKEN.stack,
             "A",
             "B",
             "A",
@@ -65,7 +65,7 @@ object ShapedRecipes
         )
         
         Registry.addShapedRecipe(
-            new ItemStack(Items.SANDWICH_FISH),
+            Items.SANDWICH_FISH.stack,
             "A",
             "B",
             "A",

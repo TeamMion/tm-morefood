@@ -10,7 +10,7 @@ object Config
 {
     var OVERRIDE_BREAD_RECIPE : Boolean = true
     
-    def load(e : FMLPreInitializationEvent)
+    def load(e : FMLPreInitializationEvent) : Unit =
     {
         val config: Configuration = new Configuration(e.getSuggestedConfigurationFile)
         

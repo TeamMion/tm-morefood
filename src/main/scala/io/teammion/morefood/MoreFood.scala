@@ -1,14 +1,7 @@
 package io.teammion.morefood
 
-import java.util
-import java.util.logging.Logger
-
-import io.teammion.morefood.recipes.{ShapedRecipes, ShapelessRecipes, SmeltingRecipes}
-import net.minecraft
-import net.minecraft.item.ItemStack
-import net.minecraft.item.crafting.{CraftingManager, IRecipe}
-import net.minecraftforge.common.MinecraftForge
-import net.minecraftforge.fml.common.Mod
+import io.teammion.morefood.proxy.CommonProxy
+import net.minecraftforge.fml.common.{Mod, SidedProxy}
 import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
 
 /**
@@ -17,48 +10,21 @@ import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostIniti
 @Mod(modid = "tm-morefood", modLanguage = "scala")
 object MoreFood
 {
-    val logger : Logger = Logger.getLogger(getClass.getName)
-    
-    logger.info("MoreFood initialized")
+    @SidedProxy(
+        serverSide = "io.teammion.morefood.proxy.CommonProxy",
+        clientSide = "io.teammion.morefood.proxy.ClientProxy"
+    )
+    var proxy : CommonProxy = _
     
     @Mod.EventHandler
-    def preInit(e : FMLPreInitializationEvent)
-    {
-        logger.info("PreInitialization")
-        
-        Config.load(e)
-        
-        Items.register()
-    }
+    def preInit(e : FMLPreInitializationEvent) : Unit =
+        proxy.preInit(e)
     
-    def init(e : FMLInitializationEvent)
-    {
-        logger.info("Initialization")
-        
-        Items.render()
-        
-        ShapedRecipes.register()
-        ShapelessRecipes.register()
-        SmeltingRecipes.register()
-        
-        MinecraftForge.EVENT_BUS.register(new EventHandler)
-    }
+    @Mod.EventHandler    
+    def init(e : FMLInitializationEvent) : Unit =
+        proxy.init(e)
     
-    def postInit(e : FMLPostInitializationEvent)
-    {
-        logger.info("PostInitialization")
-        
-        if (Config.OVERRIDE_BREAD_RECIPE)
-        {
-            val itr : util.Iterator[IRecipe] = CraftingManager.getInstance().getRecipeList.iterator()
-            
-            while (itr.hasNext)
-            {
-                val stack : ItemStack = itr.next().getRecipeOutput
-                
-                if (stack != null && stack.getItem == minecraft.init.Items.BREAD)
-                    itr.remove()
-            }
-        }
-    }
+    @Mod.EventHandler
+    def postInit(e : FMLPostInitializationEvent) : Unit =
+        proxy.postInit(e)
 }

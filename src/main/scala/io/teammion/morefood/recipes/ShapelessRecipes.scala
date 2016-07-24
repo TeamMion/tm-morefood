@@ -8,10 +8,10 @@ import net.minecraft.item.ItemStack
   */
 object ShapelessRecipes
 {
-    def register()
+    def register() : Unit =
     {
         Registry.addShapelessRecipe(
-            new ItemStack(Items.MILK_BOTTLE, 4),
+            Items.MILK_BOTTLE.stack(4),
             Items.MILK_BUCKET,
             Items.GLASS_BOTTLE,
             Items.GLASS_BOTTLE,
@@ -20,12 +20,12 @@ object ShapelessRecipes
         )
         
         Registry.addShapelessRecipe(
-            new ItemStack(Items.CHOCOLATE_PIECE, 8),
+            Items.CHOCOLATE_PIECE.stack(8),
             Items.CHOCOLATE
         )
         
         Registry.addShapelessRecipe(
-            new ItemStack(Items.CHOCOLATE_DRINK),
+            Items.CHOCOLATE_DRINK.stack,
             Items.MILK_BOTTLE,
             Items.COCOA_BEAN_GROUND,
             Items.COCOA_BEAN_GROUND,
@@ -34,12 +34,12 @@ object ShapelessRecipes
         )
         
         Registry.addShapelessRecipe(
-            new ItemStack(Items.FLOUR, 2),
+            Items.FLOUR.stack(2),
             Items.WHEAT
         )
         
         Registry.addShapelessRecipe(
-            new ItemStack(Items.SCHNITZEL_RAW),
+            Items.SCHNITZEL.stack,
             Items.PORKCHOP,
             Items.EGG,
             Items.FLOUR,
@@ -47,14 +47,14 @@ object ShapelessRecipes
         )
         
         Registry.addShapelessRecipe(
-            new ItemStack(Items.APPLE_CHOCOLATE),
+            Items.APPLE_CHOCOLATE.stack,
             Items.APPLE,
             Items.CHOCOLATE_PIECE,
             Items.CHOCOLATE_PIECE
         )
         
         Registry.addShapelessRecipe(
-            new ItemStack(Items.FISH_STICK_RAW),
+            Items.FISH_STICK_RAW.stack,
             Items.FISH,
             Items.EGG,
             Items.FLOUR,
@@ -62,25 +62,25 @@ object ShapelessRecipes
         )
         
         Registry.addShapelessRecipe(
-            new ItemStack(Items.BREAD_SLICE, 2),
+            Items.BREAD_SLICE.stack(2),
             Items.BREAD
         )
         
         Registry.addShapelessRecipe(
-            new ItemStack(Items.STRAWBERRY_CHOCOLATE),
+            Items.STRAWBERRY_CHOCOLATE.stack,
             Items.STRAWBERRY,
             Items.CHOCOLATE_PIECE,
             Items.CHOCOLATE_PIECE
         )
         
         Registry.addShapelessRecipe(
-            new ItemStack(Items.FRENCH_FRIES_RAW, 8),
+            Items.FRENCH_FRIES_RAW.stack(8),
             Items.POTATO,
             Items.POTATO
         )
         
         Registry.addShapelessRecipe(
-            new ItemStack(Items.BREAD_DOUGH, 2),
+            Items.BREAD_DOUGH.stack(2),
             Items.FLOUR,
             Items.FLOUR,
             Items.FLOUR,

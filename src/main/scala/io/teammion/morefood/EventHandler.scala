@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 class EventHandler
 {
     @SubscribeEvent
-    def onDrop(e : LivingDropsEvent)
+    def onDrop(e : LivingDropsEvent) : Unit =
     {
         val world : World = e.getEntity.worldObj
         

@@ -20,15 +20,15 @@ object Registry
             )
         )
     
-    def addSmelting(in : Item, out : ItemStack) =
+    def addSmelting(in : Item, out : ItemStack) : Unit =
         GameRegistry.addSmelting(in, out, .2f)
     
-    def addSmelting(in : ItemStack, out : ItemStack) =
+    def addSmelting(in : ItemStack, out : ItemStack) : Unit =
         GameRegistry.addSmelting(in, out, .2f)
     
     def addShapelessRecipe(out : ItemStack, params : AnyRef*) : Unit =
-        GameRegistry.addShapelessRecipe(out, params)
+        GameRegistry.addShapelessRecipe(out, params : _*)
     
-    def addShapedRecipe(out : ItemStack, params : AnyRef*) =
-        GameRegistry.addShapedRecipe(out, params)
+    def addShapedRecipe(out : ItemStack, params : AnyRef*) : Unit =
+        GameRegistry.addShapedRecipe(out, params : _*)
 }

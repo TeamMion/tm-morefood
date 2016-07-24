@@ -8,41 +8,41 @@ import net.minecraft.item.ItemStack
   */
 object SmeltingRecipes
 {
-    def register()
+    def register() : Unit =
     {
         Registry.addSmelting(
             new ItemStack(Items.DYE, 1, 3),
-            new ItemStack(Items.COCOA_BEAN_ROASTED)
+            Items.COCOA_BEAN_ROASTED.stack
         )
         
         Registry.addSmelting(
             Items.SCHNITZEL_RAW,
-            new ItemStack(Items.SCHNITZEL)
+            Items.SCHNITZEL.stack
         )
         
         Registry.addSmelting(
-            net.minecraft.init.Items.EGG,
-            new ItemStack(Items.EGG_BOILED)
+            Items.EGG,
+            Items.EGG_BOILED.stack
         )
         
         Registry.addSmelting(
             Items.APPLE_CHOCOLATE,
-            new ItemStack(Items.APPLE_CHOCOLATE_COATED)
+            Items.APPLE_CHOCOLATE_COATED.stack
         )
         
         Registry.addSmelting(
             Items.FISH_STICK_RAW,
-            new ItemStack(Items.FISH_STICK)
+            Items.FISH_STICK.stack
         )
         
         Registry.addSmelting(
             Items.STRAWBERRY_CHOCOLATE,
-            new ItemStack(Items.STRAWBERRY_CHOCOLATE_COATED)
+            Items.STRAWBERRY_CHOCOLATE_COATED.stack
         )
         
         Registry.addSmelting(
             Items.FRENCH_FRIES_RAW,
-            new ItemStack(Items.FRENCH_FRIES)
+            Items.FRENCH_FRIES.stack
         )
         
         Registry.addSmelting(

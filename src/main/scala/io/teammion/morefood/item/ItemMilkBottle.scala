@@ -10,7 +10,7 @@ import net.minecraft.world.World
 class ItemMilkBottle
     extends ItemDrink("milk_bottle", 2)
 {
-    override def onFoodEaten(stack: ItemStack, worldIn: World, player: EntityPlayer)
+    override def onFoodEaten(stack: ItemStack, worldIn: World, player: EntityPlayer) : Unit =
     {
         player.clearActivePotions()
         

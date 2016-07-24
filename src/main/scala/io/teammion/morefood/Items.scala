@@ -1,57 +1,56 @@
 package io.teammion.morefood
 
 import io.teammion.morefood.item._
+import net.minecraft
 
 /**
   * Created by Stefan Wimmer <stefanwimmer128@gmail.com> on 24.07.16.
   */
 object Items
 {
-    import net.minecraft.init
+    val APPLE : minecraft.item.Item = minecraft.init.Items.APPLE
+    val BREAD : minecraft.item.Item = minecraft.init.Items.BREAD
+    val COOKED_CHICKEN : minecraft.item.Item = minecraft.init.Items.COOKED_CHICKEN
+    val COOKED_FISH : minecraft.item.Item = minecraft.init.Items.COOKED_FISH
+    val COOKED_PORKCHOP : minecraft.item.Item = minecraft.init.Items.COOKED_PORKCHOP
+    val DYE : minecraft.item.Item = minecraft.init.Items.DYE
+    val EGG : minecraft.item.Item = minecraft.init.Items.EGG
+    val FISH : minecraft.item.Item = minecraft.init.Items.FISH
+    val GLASS_BOTTLE : minecraft.item.Item = minecraft.init.Items.GLASS_BOTTLE
+    val MILK_BUCKET : minecraft.item.Item = minecraft.init.Items.MILK_BUCKET
+    val PORKCHOP : minecraft.item.Item = minecraft.init.Items.PORKCHOP
+    val POTATO : minecraft.item.Item = minecraft.init.Items.POTATO
+    val SUGAR : minecraft.item.Item = minecraft.init.Items.SUGAR
+    val WATER_BUCKET : minecraft.item.Item = minecraft.init.Items.WATER_BUCKET
+    val WHEAT : minecraft.item.Item = minecraft.init.Items.WHEAT
     
-    val APPLE = init.Items.APPLE
-    val BREAD = init.Items.BREAD
-    val COOKED_CHICKEN = init.Items.COOKED_CHICKEN
-    val COOKED_FISH = init.Items.COOKED_FISH
-    val COOKED_PORKCHOP = init.Items.COOKED_PORKCHOP
-    val DYE = init.Items.DYE
-    val EGG = init.Items.EGG
-    val FISH = init.Items.FISH
-    val GLASS_BOTTLE = init.Items.GLASS_BOTTLE
-    val MILK_BUCKET = init.Items.MILK_BUCKET
-    val PORKCHOP = init.Items.PORKCHOP
-    val POTATO = init.Items.POTATO
-    val SUGAR = init.Items.SUGAR
-    val WATER_BUCKET = init.Items.WATER_BUCKET
-    val WHEAT = init.Items.WHEAT
+    val MILK_BOTTLE : ItemMilkBottle = new ItemMilkBottle
+    val COCOA_BEAN_ROASTED : Item = new Item("cocoa_bean_roasted")
+    val COCOA_BEAN_GROUND : Item = new Item("cocoa_bean_ground")
+    val CHOCOLATE : ItemFood = new ItemFood("chocolate", 8)
+    val CHOCOLATE_PIECE : ItemFood = new ItemFood("chocolate_piece", 1)
+    val CHOCOLATE_DRINK : ItemDrink = new ItemDrink("chocolate_drink", 4)
+    val FLOUR : Item = new Item("flour")
+    val SCHNITZEL_RAW : Item = new Item("schnitzel_raw")
+    val SCHNITZEL : ItemFood = new ItemFood("schnitzel", 4)
+    val EGG_BOILED : ItemFood = new ItemFood("egg_boiled", 3)
+    val APPLE_CHOCOLATE : Item = new Item("apple_chocolate")
+    val APPLE_CHOCOLATE_COATED : ItemFood = new ItemFood("apple_chocolate_coated", 8)
+    val FISH_STICK_RAW : Item = new Item("fish_stick_raw")
+    val FISH_STICK : ItemFood = new ItemFood("fish_stick", 6)
+    val BREAD_SLICE : Item = new Item("bread_slice")
+    val SANDWICH_SCHNITZEL : ItemFood = new ItemFood("sandwich_schnitzel", 5)
+    val SANDWICH_PORKCHOP : ItemFood = new ItemFood("sandwich_porkchop", 5)
+    val SANDWICH_CHICKEN : ItemFood = new ItemFood("sandwich_chicken", 5)
+    val SANDWICH_FISH : ItemFood = new ItemFood("sandwich_fish", 5)
+    val STRAWBERRY : ItemStrawberry = new ItemStrawberry
+    val STRAWBERRY_CHOCOLATE : Item = new Item("strawberry_chocolate")
+    val STRAWBERRY_CHOCOLATE_COATED : ItemFood = new ItemFood("strawberry_chocolate_coated", 8)
+    val FRENCH_FRIES_RAW : Item = new Item("french_fries_raw")
+    val FRENCH_FRIES : ItemFood = new ItemFood("french_fries", 6)
+    val BREAD_DOUGH : Item = new Item("bread_dough")
     
-    val MILK_BOTTLE = new ItemMilkBottle
-    val COCOA_BEAN_ROASTED = new Item("cocoa_bean_roasted")
-    val COCOA_BEAN_GROUND = new Item("cocoa_bean_ground")
-    val CHOCOLATE = new ItemFood("chocolate", 8)
-    val CHOCOLATE_PIECE = new ItemFood("chocolate_piece", 1)
-    val CHOCOLATE_DRINK = new ItemDrink("chocolate_drink", 4)
-    val FLOUR = new Item("flour")
-    val SCHNITZEL_RAW = new Item("schnitzel_raw")
-    val SCHNITZEL = new ItemFood("schnitzel", 4)
-    val EGG_BOILED = new ItemFood("egg_boiled", 3)
-    val APPLE_CHOCOLATE = new Item("apple_chocolate")
-    val APPLE_CHOCOLATE_COATED = new ItemFood("apple_chocolate_coated", 8)
-    val FISH_STICK_RAW = new Item("fish_stick_raw")
-    val FISH_STICK = new ItemFood("fish_stick", 6)
-    val BREAD_SLICE = new Item("bread_slice")
-    val SANDWICH_SCHNITZEL = new ItemFood("sandwich_schnitzel", 5)
-    val SANDWICH_PORKCHOP = new ItemFood("sandwich_porkchop", 5)
-    val SANDWICH_CHICKEN = new ItemFood("sandwich_chicken", 5)
-    val SANDWICH_FISH = new ItemFood("sandwich_fish", 5)
-    val STRAWBERRY = new ItemStrawberry
-    val STRAWBERRY_CHOCOLATE = new Item("strawberry_chocolate")
-    val STRAWBERRY_CHOCOLATE_COATED = new ItemFood("strawberry_chocolate_coated", 8)
-    val FRENCH_FRIES_RAW = new Item("french_fries_raw")
-    val FRENCH_FRIES = new ItemFood("french_fries", 6)
-    val BREAD_DOUGH = new Item("bread_dough")
-    
-    def register()
+    def register() : Unit =
     {
         Registry.register(MILK_BOTTLE)
         Registry.register(COCOA_BEAN_ROASTED)
@@ -80,7 +79,7 @@ object Items
         Registry.register(BREAD_DOUGH)
     }
     
-    def render()
+    def render() : Unit =
     {
         Registry.render(MILK_BOTTLE)
         Registry.render(COCOA_BEAN_ROASTED)

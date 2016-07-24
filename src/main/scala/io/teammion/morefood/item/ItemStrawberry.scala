@@ -12,7 +12,7 @@ class ItemStrawberry
 {
     setAlwaysEdible()
 
-    override def onFoodEaten(stack: ItemStack, worldIn: World, player: EntityPlayer)
+    override def onFoodEaten(stack: ItemStack, worldIn: World, player: EntityPlayer) : Unit =
     {
         player.heal(2)
         

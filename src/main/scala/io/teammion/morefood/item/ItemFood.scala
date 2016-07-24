@@ -15,9 +15,9 @@ class ItemFood(name : String, amount : Int, saturation : Float = .6f, isWolfFood
     
     setCreativeTab(CreativeTabs.FOOD)
     
-    def createStack(i : Int) : ItemStack =
+    def stack(i : Int = 0) : ItemStack =
         new ItemStack(this, i)
     
-    def createStack : ItemStack =
-        createStack(0)
+    def stack : ItemStack =
+        stack(0)
 }

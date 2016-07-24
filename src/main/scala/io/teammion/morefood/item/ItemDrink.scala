@@ -15,7 +15,7 @@ class ItemDrink(name : String, amount : Int, saturation : Float, isWolfFood : Bo
     def this(name : String, amount : Int) =
         this(name, amount, .6f, false)
 
-    override def onFoodEaten(stack: ItemStack, worldIn: World, player: EntityPlayer)
+    override def onFoodEaten(stack: ItemStack, worldIn: World, player: EntityPlayer) : Unit =
     {
         val bottle : ItemStack = new ItemStack(Items.GLASS_BOTTLE) 
         
