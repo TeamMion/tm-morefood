@@ -13,7 +13,8 @@ buildscript {
     }
 }
 
-apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: "scala"
+apply plugin: "net.minecraftforge.gradle.forge"
 
 /*
 // for people who want stable - not yet functional for MC 1.8.8 - we require the forgegradle 2.1 snapshot
@@ -21,7 +22,7 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "1.2.0"
+version = "2.0.0-rc.1"
 group = "io.teammion.morefood"
 archivesBaseName = "tm-morefood"
 
