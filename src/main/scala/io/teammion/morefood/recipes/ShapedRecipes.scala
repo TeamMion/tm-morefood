@@ -38,21 +38,12 @@ object ShapedRecipes
         )
         
         Registry.addShapedRecipe(
-            Items.SANDWICH_SCHNITZEL.stack,
+            Items.SANDWICH_FISH.stack,
             "A",
             "B",
             "A",
             char2Character('A'), Items.BREAD_SLICE,
-            char2Character('B'), Items.SCHNITZEL
-        )
-        
-        Registry.addShapedRecipe(
-            Items.SANDWICH_PORKCHOP.stack,
-            "A",
-            "B",
-            "A",
-            char2Character('A'), Items.BREAD_SLICE,
-            char2Character('B'), Items.COOKED_PORKCHOP
+            char2Character('B'), Items.COOKED_FISH
         )
         
         Registry.addShapedRecipe(
@@ -65,12 +56,21 @@ object ShapedRecipes
         )
         
         Registry.addShapedRecipe(
-            Items.SANDWICH_FISH.stack,
+            Items.SANDWICH_PORKCHOP.stack,
             "A",
             "B",
             "A",
             char2Character('A'), Items.BREAD_SLICE,
-            char2Character('B'), Items.COOKED_FISH
+            char2Character('B'), Items.COOKED_PORKCHOP
+        )
+        
+        Registry.addShapedRecipe(
+            Items.SANDWICH_SCHNITZEL.stack,
+            "A",
+            "B",
+            "A",
+            char2Character('A'), Items.BREAD_SLICE,
+            char2Character('B'), Items.SCHNITZEL
         )
     }
 }

@@ -3,7 +3,7 @@ package io.teammion.morefood.proxy
 import java.util
 
 import io.teammion.morefood.recipes.{ShapedRecipes, ShapelessRecipes, SmeltingRecipes}
-import io.teammion.morefood.{Config, EventHandler, Items}
+import io.teammion.morefood.{Config, EventHandler, Items, MoreFood}
 import net.minecraft
 import net.minecraft.item.ItemStack
 import net.minecraft.item.crafting.{CraftingManager, IRecipe}
