@@ -1,6 +1,6 @@
 package io.teammion.morefood.item
 
-import net.minecraft.creativetab.CreativeTabs
+import io.teammion.morefood.CreativeTabs
 import net.minecraft.item
 import net.minecraft.item.ItemStack
 

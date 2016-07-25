@@ -1,6 +1,6 @@
 package io.teammion.morefood.item
 
-import net.minecraft.creativetab.CreativeTabs
+import io.teammion.morefood.CreativeTabs
 import net.minecraft.item.ItemStack
 
 /**
@@ -11,7 +11,7 @@ class Item(name : String) extends net.minecraft.item.Item
     setRegistryName(name)
     setUnlocalizedName(name)
     
-    setCreativeTab(CreativeTabs.FOOD)
+    setCreativeTab(CreativeTabs.ITEM)
     
     def stack(i : Int) : ItemStack =
         new ItemStack(this, i)

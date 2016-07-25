@@ -3,9 +3,7 @@ package io.teammion.morefood.proxy
 import java.util
 
 import io.teammion.morefood.recipes.{ShapedRecipes, ShapelessRecipes, SmeltingRecipes}
-import io.teammion.morefood.{Config, EventHandler, Items, MoreFood}
-import net.minecraft
-import net.minecraft.item.ItemStack
+import io.teammion.morefood.{Config, EventHandler, Items}
 import net.minecraft.item.crafting.{CraftingManager, IRecipe}
 import net.minecraftforge.common.MinecraftForge
 import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
@@ -39,9 +37,9 @@ class CommonProxy
             
             while (itr.hasNext)
             {
-                val stack : ItemStack = itr.next().getRecipeOutput
+                val stack = itr.next().getRecipeOutput
                 
-                if (stack != null && stack.getItem == minecraft.init.Items.BREAD)
+                if (stack != null && stack.getItem == Items.BREAD)
                     itr.remove()
             }
         }
