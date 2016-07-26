@@ -2,7 +2,6 @@ package io.teammion.morefood
 
 import io.teammion.morefood.item._
 import net.minecraft
-import org.objectweb.asm.commons.SerialVersionUIDAdder.Item
 
 /**
   * Created by Stefan Wimmer <stefanwimmer128@gmail.com> on 24.07.16.
@@ -25,31 +24,31 @@ object Items
     val WATER_BUCKET : minecraft.item.Item = minecraft.init.Items.WATER_BUCKET
     val WHEAT : minecraft.item.Item = minecraft.init.Items.WHEAT
     
-    var APPLE_CHOCOLATE : Item = new Item("apple_chocolate")
-    var APPLE_CHOCOLATE_COATED : ItemFood = new ItemFood("apple_chocolate_coated", 8)
-    var BREAD_DOUGH : Item = new Item("bread_dough")
-    var BREAD_SLICE : Item = new Item("bread_slice")
-    var CHOCOLATE : ItemFood = new ItemFood("chocolate", 8)
-    var CHOCOLATE_DRINK : ItemDrink = new ItemDrink("chocolate_drink", 4)
-    var CHOCOLATE_PIECE : ItemFood = new ItemFood("chocolate_piece", 1)
-    var COCOA_BEAN_GROUND : Item = new Item("cocoa_bean_ground")
-    var COCOA_BEAN_ROASTED : Item = new Item("cocoa_bean_roasted")
-    var EGG_BOILED : ItemFood = new ItemFood("egg_boiled", 3)
-    var FISH_STICK : ItemFood = new ItemFood("fish_stick", 6)
-    var FISH_STICK_RAW : Item = new Item("fish_stick_raw")
-    var FLOUR : Item = new Item("flour")
-    var FRENCH_FRIES : ItemFood = new ItemFood("french_fries", 6)
-    var FRENCH_FRIES_RAW : Item = new Item("french_fries_raw")
-    var MILK_BOTTLE : ItemMilkBottle = new ItemMilkBottle
-    var SANDWICH_CHICKEN : ItemFood = new ItemFood("sandwich_chicken", 5)
-    var SANDWICH_FISH : ItemFood = new ItemFood("sandwich_fish", 5)
-    var SANDWICH_PORKCHOP : ItemFood = new ItemFood("sandwich_porkchop", 5)
-    var SANDWICH_SCHNITZEL : ItemFood = new ItemFood("sandwich_schnitzel", 5)
-    var SCHNITZEL : ItemFood = new ItemFood("schnitzel", 4)
-    var SCHNITZEL_RAW : Item = new Item("schnitzel_raw")
-    var STRAWBERRY : ItemStrawberry = new ItemStrawberry
-    var STRAWBERRY_CHOCOLATE : Item = new Item("strawberry_chocolate")
-    var STRAWBERRY_CHOCOLATE_COATED : ItemFood = new ItemFood("strawberry_chocolate_coated", 8)
+    val APPLE_CHOCOLATE : Item = new Item("apple_chocolate")
+    val APPLE_CHOCOLATE_COATED : ItemFood = new ItemFood("apple_chocolate_coated", 8)
+    val BREAD_DOUGH : Item = new Item("bread_dough")
+    val BREAD_SLICE : Item = new Item("bread_slice")
+    val CHOCOLATE : ItemFood = new ItemFood("chocolate", 8)
+    val CHOCOLATE_DRINK : ItemDrink = new ItemDrink("chocolate_drink", 4)
+    val CHOCOLATE_PIECE : ItemFood = new ItemFood("chocolate_piece", 1)
+    val COCOA_BEAN_GROUND : Item = new Item("cocoa_bean_ground")
+    val COCOA_BEAN_ROASTED : Item = new Item("cocoa_bean_roasted")
+    val EGG_BOILED : ItemFood = new ItemFood("egg_boiled", 3)
+    val FISH_STICK : ItemFood = new ItemFood("fish_stick", 6)
+    val FISH_STICK_RAW : Item = new Item("fish_stick_raw")
+    val FLOUR : Item = new Item("flour")
+    val FRENCH_FRIES : ItemFood = new ItemFood("french_fries", 6)
+    val FRENCH_FRIES_RAW : Item = new Item("french_fries_raw")
+    val MILK_BOTTLE : ItemMilkBottle = new ItemMilkBottle
+    val SANDWICH_CHICKEN : ItemFood = new ItemFood("sandwich_chicken", 5)
+    val SANDWICH_FISH : ItemFood = new ItemFood("sandwich_fish", 5)
+    val SANDWICH_PORKCHOP : ItemFood = new ItemFood("sandwich_porkchop", 5)
+    val SANDWICH_SCHNITZEL : ItemFood = new ItemFood("sandwich_schnitzel", 5)
+    val SCHNITZEL : ItemFood = new ItemFood("schnitzel", 4)
+    val SCHNITZEL_RAW : Item = new Item("schnitzel_raw")
+    val STRAWBERRY : ItemStrawberry = new ItemStrawberry
+    val STRAWBERRY_CHOCOLATE : Item = new Item("strawberry_chocolate")
+    val STRAWBERRY_CHOCOLATE_COATED : ItemFood = new ItemFood("strawberry_chocolate_coated", 8)
     
     def register() : Unit =
     {
