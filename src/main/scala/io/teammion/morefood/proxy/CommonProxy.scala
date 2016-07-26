@@ -3,7 +3,7 @@ package io.teammion.morefood.proxy
 import java.util
 
 import io.teammion.morefood.recipes.{ShapedRecipes, ShapelessRecipes, SmeltingRecipes}
-import io.teammion.morefood.{Config, EventHandler, Items}
+import io.teammion.morefood.{Config, EventHandler, ItemRegistry, Items}
 import net.minecraft.item.crafting.{CraftingManager, IRecipe}
 import net.minecraftforge.common.MinecraftForge
 import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
@@ -11,16 +11,16 @@ import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostIniti
 /**
   * Created by Stefan Wimmer <stefanwimmer128@gmail.com> on 24.07.16.
   */
-class CommonProxy
+class CommonProxy extends IProxy
 {
-    def preInit(e : FMLPreInitializationEvent) : Unit =
+    override def preInit(e : FMLPreInitializationEvent) : Unit =
     {
         Config.load(e)
         
         Items.register()
     }
     
-    def init(e : FMLInitializationEvent) : Unit =
+    override def init(e : FMLInitializationEvent) : Unit =
     {
         ShapedRecipes.register()
         ShapelessRecipes.register()
@@ -29,7 +29,7 @@ class CommonProxy
         MinecraftForge.EVENT_BUS.register(new EventHandler)
     }
     
-    def postInit(e : FMLPostInitializationEvent) : Unit =
+    override def postInit(e : FMLPostInitializationEvent) : Unit =
     {
         if (Config.OVERRIDE_BREAD_RECIPE)
         {

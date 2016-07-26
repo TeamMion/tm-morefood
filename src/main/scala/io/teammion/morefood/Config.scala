@@ -16,7 +16,12 @@ object Config
         
         config.load()
         
-        OVERRIDE_BREAD_RECIPE = config.get("general", "override_bread_recipe", OVERRIDE_BREAD_RECIPE, "If true the bread recipe will be overridden").getBoolean
+        OVERRIDE_BREAD_RECIPE = config.get(
+            "general",
+            "override_bread_recipe",
+            OVERRIDE_BREAD_RECIPE,
+            "If true the bread recipe will be overridden"
+        ).getBoolean
         
         config.save()
     }
