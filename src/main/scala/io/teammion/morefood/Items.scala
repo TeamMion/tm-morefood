@@ -1,13 +1,32 @@
+/*
+ * Copyright (c) 2016, Team Mion
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
 package io.teammion.morefood
 
 import io.teammion.morefood.item._
 import net.minecraft
 
 /**
-  * Created by Stefan Wimmer <stefanwimmer128@gmail.com> on 24.07.16.
+  * Items (divided into Minecraft imports and Mod items, sorted alphabetically by name)
+  *
+  * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
 object Items
 {
+    /* Minecraft items */
     val APPLE : minecraft.item.Item = minecraft.init.Items.APPLE
     val BREAD : minecraft.item.Item = minecraft.init.Items.BREAD
     val COOKED_CHICKEN : minecraft.item.Item = minecraft.init.Items.COOKED_CHICKEN
@@ -24,6 +43,7 @@ object Items
     val WATER_BUCKET : minecraft.item.Item = minecraft.init.Items.WATER_BUCKET
     val WHEAT : minecraft.item.Item = minecraft.init.Items.WHEAT
     
+    /* Mod items */
     val APPLE_CHOCOLATE : Item = new Item("apple_chocolate")
     val APPLE_CHOCOLATE_COATED : ItemFood = new ItemFood("apple_chocolate_coated", 8)
     val BREAD_DOUGH : Item = new Item("bread_dough")
@@ -49,7 +69,10 @@ object Items
     val STRAWBERRY : ItemStrawberry = new ItemStrawberry
     val STRAWBERRY_CHOCOLATE : Item = new Item("strawberry_chocolate")
     val STRAWBERRY_CHOCOLATE_COATED : ItemFood = new ItemFood("strawberry_chocolate_coated", 8)
-    
+
+    /**
+      * Register items
+      */
     def register() : Unit =
     {
         Registry.register(APPLE_CHOCOLATE)
@@ -78,7 +101,10 @@ object Items
         Registry.register(STRAWBERRY_CHOCOLATE)
         Registry.register(STRAWBERRY_CHOCOLATE_COATED)
     }
-    
+
+    /**
+      * Register render
+      */
     def render() : Unit =
     {
         Registry.render(APPLE_CHOCOLATE)

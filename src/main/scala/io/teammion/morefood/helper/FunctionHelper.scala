@@ -14,31 +14,21 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package io.teammion.morefood.proxy
+package io.teammion.morefood.helper
 
-import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
+import java.util.function.Consumer
 
 /**
-  * Proxy definition
+  * Created on 01.08.16 at 19:47
   *
   * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
-trait IProxy
+object FunctionHelper
 {
-    def preInit(e : FMLPreInitializationEvent) : Unit
-    
-    def init(e : FMLInitializationEvent) : Unit
-    
-    def postInit(e : FMLPostInitializationEvent) : Unit
-}
-
-/**
-  * Defines proxies
-  *
-  * @author Stefan Wimmer <stefanwimmer128@gmail.com>
-  */
-object IProxy
-{
-    final val SERVER = "io.teammion.morefood.proxy.CommonProxy"
-    final val CLIENT = "io.teammion.morefood.proxy.ClientProxy"
+    def toConsumer[T](fn : (T) => Unit) : Consumer[T] =
+        new Consumer[T]
+        {
+            override def accept(t : T) : Unit =
+                fn(t)
+        }
 }

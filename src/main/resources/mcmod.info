@@ -2,7 +2,7 @@
     {
         "modid": "tm-morefood",
         "name": "MoreFood",
-        "description": "",
+        "description": "This Minecraft Mod will add additional food to Minecraft to provide a healthy variety.",
         "version": "${version}",
         "mcversion": "${mcversion}",
         "url": "http://minecraft.curseforge.com/projects/tm-morefood",

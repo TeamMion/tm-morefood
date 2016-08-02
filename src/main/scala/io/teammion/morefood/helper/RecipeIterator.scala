@@ -14,31 +14,34 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package io.teammion.morefood.proxy
+package io.teammion.morefood.helper
 
-import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
+import java.util
+
+import net.minecraft.item.crafting.IRecipe
 
 /**
-  * Proxy definition
+  * Created on 01.08.16 at 09:33
   *
   * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
-trait IProxy
+class RecipeIterator(recipes : util.List[IRecipe]) extends util.Iterator[IRecipe]
 {
-    def preInit(e : FMLPreInitializationEvent) : Unit
+    private val itr : util.Iterator[IRecipe] = recipes.iterator()
     
-    def init(e : FMLInitializationEvent) : Unit
-    
-    def postInit(e : FMLPostInitializationEvent) : Unit
-}
+    override def hasNext: Boolean =
+        itr.hasNext
 
-/**
-  * Defines proxies
-  *
-  * @author Stefan Wimmer <stefanwimmer128@gmail.com>
-  */
-object IProxy
-{
-    final val SERVER = "io.teammion.morefood.proxy.CommonProxy"
-    final val CLIENT = "io.teammion.morefood.proxy.ClientProxy"
+    override def next(): IRecipe =
+        itr.next()
+
+    override def remove() : Unit =
+        itr.remove()
+    
+    def forEach(fn : (IRecipe, RecipeIterator) => Unit) : Unit =
+    {
+        val itr = new RecipeIterator(recipes)
+        while (itr.hasNext)
+            fn(itr.next(), itr)
+    }
 }

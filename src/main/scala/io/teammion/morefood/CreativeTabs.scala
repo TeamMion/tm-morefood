@@ -1,10 +1,28 @@
+/*
+ * Copyright (c) 2016, Team Mion
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
 package io.teammion.morefood
 
 import net.minecraft.creativetab
 import net.minecraft.item.Item
 
 /**
-  * Created by Stefan Wimmer <stefanwimmer128@gmail.com> on 25.07.16.
+  * Easier CreativeTabs base class
+  *
+  * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
 class CreativeTabs(label : String, tabIconItem : Item) extends creativetab.CreativeTabs(label)
 {
@@ -12,8 +30,13 @@ class CreativeTabs(label : String, tabIconItem : Item) extends creativetab.Creat
         tabIconItem
 }
 
+/**
+  * Definition of mods CreativeTabs
+  *
+  * @author Stefan Wimmer <stefanwimmer128@gmail.com>
+  */
 object CreativeTabs
 {
     val ITEM : creativetab.CreativeTabs = creativetab.CreativeTabs.FOOD
-    val FOOS : creativetab.CreativeTabs = creativetab.CreativeTabs.FOOD
+    val FOOD : creativetab.CreativeTabs = creativetab.CreativeTabs.FOOD
 }
