@@ -24,7 +24,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent
   *
   * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
-class ClientProxy extends CommonProxy
+class ClientProxy extends Proxy
 {
     override def init(e : FMLInitializationEvent) : Unit =
     {

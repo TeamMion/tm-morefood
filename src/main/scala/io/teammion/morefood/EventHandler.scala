@@ -16,12 +16,9 @@
 
 package io.teammion.morefood
 
-import io.teammion.morefood.helper.InventoryIterator
 import net.minecraft.entity.item.EntityItem
-import net.minecraft.item.ItemStack
 import net.minecraftforge.event.entity.living.LivingDropsEvent
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
-import net.minecraftforge.fml.common.gameevent.PlayerEvent
 
 /**
   * Handles events

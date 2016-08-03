@@ -16,29 +16,11 @@
 
 package io.teammion.morefood.proxy
 
-import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
-
 /**
-  * Proxy definition
+  * Created on 03.08.16 at 16:28
   *
   * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
-trait IProxy
+class ServerProxy extends Proxy
 {
-    def preInit(e : FMLPreInitializationEvent) : Unit
-    
-    def init(e : FMLInitializationEvent) : Unit
-    
-    def postInit(e : FMLPostInitializationEvent) : Unit
-}
-
-/**
-  * Defines proxies
-  *
-  * @author Stefan Wimmer <stefanwimmer128@gmail.com>
-  */
-object IProxy
-{
-    final val SERVER = "io.teammion.morefood.proxy.CommonProxy"
-    final val CLIENT = "io.teammion.morefood.proxy.ClientProxy"
 }

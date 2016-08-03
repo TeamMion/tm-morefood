@@ -16,7 +16,7 @@
 
 package io.teammion.morefood
 
-import io.teammion.morefood.proxy.IProxy
+import io.teammion.morefood.proxy.Proxy
 import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
 import net.minecraftforge.fml.common.{Mod, SidedProxy}
 import org.apache.logging.log4j.Logger
@@ -30,10 +30,10 @@ import org.apache.logging.log4j.Logger
 object MoreFood
 {
     @SidedProxy(
-        serverSide = IProxy.SERVER,
-        clientSide = IProxy.CLIENT
+        serverSide = Proxy.SERVER,
+        clientSide = Proxy.CLIENT
     )
-    var proxy : IProxy = _
+    var proxy : Proxy = _
     
     var logger : Logger = _
     
