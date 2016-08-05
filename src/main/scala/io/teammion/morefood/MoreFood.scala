@@ -17,9 +17,9 @@
 package io.teammion.morefood
 
 import io.teammion.morefood.proxy.Proxy
+import io.teammion.morefood.util.Logger
 import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
 import net.minecraftforge.fml.common.{Mod, SidedProxy}
-import org.apache.logging.log4j.Logger
 
 /**
   * Mod base object
@@ -35,37 +35,33 @@ object MoreFood
     )
     var proxy : Proxy = _
     
-    var logger : Logger = _
-    
     @Mod.EventHandler
     def preInit(e : FMLPreInitializationEvent) : Unit =
     {
-        logger = e.getModLog
-        
-        logger.info ("MoreFood preinitializing...")
+        Logger.info ("MoreFood preinitializing...")
         
         proxy.preInit(e)
         
-        logger.info("MoreFood preinitialized")
+        Logger.info("MoreFood preinitialized")
     }
     
     @Mod.EventHandler    
     def init(e : FMLInitializationEvent) : Unit =
     {
-        logger.info("MoreFood initializing...")
+        Logger.info("MoreFood initializing...")
         
         proxy.init(e)
         
-        logger.info("MoreFood initialized")
+        Logger.info("MoreFood initialized")
     }
     
     @Mod.EventHandler
     def postInit(e : FMLPostInitializationEvent) : Unit =
     {
-        logger.info("MoreFood postinitializing...")
+        Logger.info("MoreFood postinitializing...")
         
         proxy.postInit(e)
         
-        logger.info("MoreFood postinitialized")
+        Logger.info("MoreFood postinitialized")
     }
 }
