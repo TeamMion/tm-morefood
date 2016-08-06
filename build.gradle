@@ -43,22 +43,6 @@ sourceSets
             srcDirs = []
         }
     }
-    
-    test
-    {
-        scala
-        {
-            srcDirs = [
-                "src/main/scala",
-                "src/main/java"
-            ]
-        }
-        
-        java
-        {
-            srcDirs = []
-        }
-    }
 }
 
 sourceJar
