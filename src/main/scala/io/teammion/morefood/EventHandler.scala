@@ -47,10 +47,12 @@ class EventHandler
   */
 object EventHandler
 {
+    private val eventHandler : EventHandler = new EventHandler
+    
     /**
       * Get EventHandler instance
       * @return EventHandler instance
       */
     def instance : EventHandler =
-        new EventHandler
+        eventHandler
 }

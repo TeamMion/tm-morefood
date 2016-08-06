@@ -26,6 +26,46 @@ archivesBaseName = "tm-morefood"
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
+sourceSets
+{
+    main
+    {
+        scala
+        {
+            srcDirs = [
+                "src/main/scala",
+                "src/main/java"
+            ]
+        }
+        
+        java
+        {
+            srcDirs = []
+        }
+    }
+    
+    test
+    {
+        scala
+        {
+            srcDirs = [
+                "src/main/scala",
+                "src/main/java"
+            ]
+        }
+        
+        java
+        {
+            srcDirs = []
+        }
+    }
+}
+
+sourceJar
+{
+    from "src/main/java"
+}
+
 minecraft
 {
     version = "1.10.2-12.18.1.2020"
