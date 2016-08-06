@@ -16,7 +16,7 @@
 
 package io.teammion.morefood
 
-import io.teammion.morefood.proxy.Proxy
+import io.teammion.morefood.proxy.IProxy
 import io.teammion.morefood.util.Logger
 import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
 import net.minecraftforge.fml.common.{Mod, SidedProxy}
@@ -30,10 +30,10 @@ import net.minecraftforge.fml.common.{Mod, SidedProxy}
 object MoreFood
 {
     @SidedProxy(
-        serverSide = Proxy.SERVER,
-        clientSide = Proxy.CLIENT
+        serverSide = IProxy.SERVER,
+        clientSide = IProxy.CLIENT
     )
-    var proxy : Proxy = _
+    var proxy : IProxy = _
     
     @Mod.EventHandler
     def preInit(e : FMLPreInitializationEvent) : Unit =

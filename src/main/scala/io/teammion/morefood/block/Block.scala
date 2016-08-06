@@ -14,28 +14,31 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package io.teammion.morefood.item
+package io.teammion.morefood.block
 
 import io.teammion.morefood.CreativeTabs
+import net.minecraft.block
+import net.minecraft.block.material.Material
 import net.minecraft.item.ItemStack
 
 /**
-  * Item base class
+  * Created on 06.08.16 at 08:49
   *
   * @param name Registry / Unlocalized name
+  * @param material Block material
   * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
-class Item(name : String)
-    extends net.minecraft.item.Item
+class Block(name : String, material : Material)
+    extends block.Block(material)
 {
     setRegistryName(name)
     setUnlocalizedName(name)
     
-    setCreativeTab(CreativeTabs.ITEM)
+    setCreativeTab(CreativeTabs.BLOCK)
     
     /**
       * Returns an ItemStack with specified stackSize
-      * @param stackSize stackSize of ItemStack
+      * @param stackSize stackSize of ItemStack. Default: 1
       * @return ItemStack with specified stackSize
       */
     def stack(stackSize : Int) : ItemStack =

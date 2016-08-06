@@ -14,13 +14,24 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package io.teammion.morefood.proxy
+package io.teammion.morefood
+
+import io.teammion.morefood.block._
+import io.teammion.morefood.tileentity._
+import net.minecraft.block.material.Material
 
 /**
-  * Created on 03.08.16 at 16:28
+  * Created on 06.08.16 at 09:10
   *
   * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
-class ServerProxy extends Proxy
+object Blocks
 {
+    def register() : Unit =
+    {
+    }
+    
+    def render() : Unit =
+    {
+    }
 }

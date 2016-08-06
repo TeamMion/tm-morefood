@@ -39,4 +39,5 @@ object CreativeTabs
 {
     val ITEM : creativetab.CreativeTabs = creativetab.CreativeTabs.FOOD
     val FOOD : creativetab.CreativeTabs = creativetab.CreativeTabs.FOOD
+    val BLOCK : creativetab.CreativeTabs = creativetab.CreativeTabs.FOOD
 }

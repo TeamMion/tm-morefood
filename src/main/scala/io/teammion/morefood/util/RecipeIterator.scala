@@ -30,58 +30,35 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package io.teammion.morefood.proxy
+package io.teammion.morefood.util
 
 import java.util
 
-import io.teammion.morefood.helper.FunctionHelper
-import io.teammion.morefood.recipes.{ShapedRecipes, ShapelessRecipes, SmeltingRecipes}
-import io.teammion.morefood.{Config, EventHandler, Items}
-import net.minecraft.item.crafting.{CraftingManager, IRecipe}
-import net.minecraftforge.common.MinecraftForge
-import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
+import net.minecraft.item.crafting.IRecipe
 
 /**
-  * Common proxy (will be used on server and client side)
+  * Created on 01.08.16 at 09:33
   *
   * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
-class Proxy
+class RecipeIterator(recipes : util.List[IRecipe])
+    extends util.Iterator[IRecipe]
 {
-    def preInit(e : FMLPreInitializationEvent) : Unit =
-    {
-        Config.load(e)
-        
-        Items.register()
-    }
+    private val itr : util.Iterator[IRecipe] = recipes.iterator()
     
-    def init(e : FMLInitializationEvent) : Unit =
-    {
-        ShapedRecipes.register()
-        ShapelessRecipes.register()
-        SmeltingRecipes.register()
-        
-        MinecraftForge.EVENT_BUS.register(EventHandler.instance)
-    }
-    
-    def postInit(e : FMLPostInitializationEvent) : Unit =
-    {
-        if (Config.OVERRIDE_BREAD_RECIPE)
-        {
-            val recipes : util.List[IRecipe] = CraftingManager.getInstance().getRecipeList
-            
-            recipes.stream().forEach(
-                FunctionHelper.toConsumer[IRecipe]((recipe : IRecipe) =>
-                    if (recipe != null && recipe.getRecipeOutput != null && recipe.getRecipeOutput.getItem == Items.BREAD)
-                        recipes.remove(recipe)
-                )
-            )
-        }
-    }
-}
+    override def hasNext: Boolean =
+        itr.hasNext
 
-object Proxy
-{
-    final val SERVER = "io.teammion.morefood.proxy.ServerProxy"
-    final val CLIENT = "io.teammion.morefood.proxy.ClientProxy"
+    override def next(): IRecipe =
+        itr.next()
+
+    override def remove() : Unit =
+        itr.remove()
+    
+    def forEach(fn : (IRecipe, RecipeIterator) => Unit) : Unit =
+    {
+        val itr = new RecipeIterator(recipes)
+        while (itr.hasNext)
+            fn(itr.next(), itr)
+    }
 }

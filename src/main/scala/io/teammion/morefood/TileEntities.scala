@@ -14,21 +14,16 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package io.teammion.morefood.helper
-
-import java.util.function.Consumer
+package io.teammion.morefood
 
 /**
-  * Created on 01.08.16 at 19:47
+  * Created on 06.08.16 at 10:23
   *
   * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
-object FunctionHelper
+object TileEntities
 {
-    def toConsumer[T](fn : (T) => Unit) : Consumer[T] =
-        new Consumer[T]
-        {
-            override def accept(t : T) : Unit =
-                fn(t)
-        }
+    def register() : Unit =
+    {
+    }
 }

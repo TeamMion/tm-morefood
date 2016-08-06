@@ -16,10 +16,12 @@
 
 package io.teammion.morefood
 
+import net.minecraft.block.Block
 import net.minecraft.client.Minecraft
 import net.minecraft.client.renderer.block.model.ModelResourceLocation
 import net.minecraft.item.{Item, ItemStack}
-import net.minecraftforge.fml.common.registry.GameRegistry
+import net.minecraft.tileentity.TileEntity
+import net.minecraftforge.fml.common.registry.{GameRegistry, IForgeRegistryEntry}
 
 /**
   * Extended registry
@@ -28,8 +30,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry
   */
 object Registry
 {
-    def register(item : Item) : Unit =
-        GameRegistry.register(item)
+    def register(entry : _ <: IForgeRegistryEntry[_]) : Unit =
+        GameRegistry.register(entry)
+    
+    def registerTileEntity(tileEntityClass : Class[_ <: TileEntity], name : String) : Unit =
+    {
+        GameRegistry.registerTileEntity(tileEntityClass, name)
+    }
     
     def render(item : Item, meta : Int = 0, name : String = null) : Unit =
         Minecraft.getMinecraft.getRenderItem.getItemModelMesher.register(
@@ -37,6 +44,9 @@ object Registry
                 "tm-morefood:" + Option(name).getOrElse(item.getUnlocalizedName.substring(5)), "inventory"
             )
         )
+    
+    def render(block : Block, meta : Int = 0, name : String = null) : Unit =
+        render(Item.getItemFromBlock(block), meta, name)
     
     def addSmelting(in : Item, out : ItemStack) : Unit =
         GameRegistry.addSmelting(in, out, .2f)

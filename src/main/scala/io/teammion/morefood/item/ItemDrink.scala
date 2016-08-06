@@ -25,6 +25,10 @@ import net.minecraft.world.World
 /**
   * ItemDrink base class
   *
+  * @param name Registry / Unlocalized name
+  * @param amount Amount of food to regain when eating
+  * @param saturation Saturation for food. Default: .6f
+  * @param isWolfFood Defines if food can be given to Wolfs (Dogs). Default: false
   * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
 class ItemDrink(name : String, amount : Int, saturation : Float, isWolfFood : Boolean)

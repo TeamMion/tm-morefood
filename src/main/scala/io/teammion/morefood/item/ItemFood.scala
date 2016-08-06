@@ -23,6 +23,10 @@ import net.minecraft.item.ItemStack
 /**
   * Created on 31.07.16 at 20:44
   *
+  * @param name Registry / Unlocalized name
+  * @param amount Amount of food to regain when eating
+  * @param saturation Saturation for food. Default: .6f
+  * @param isWolfFood Defines if food can be given to Wolfs (Dogs). Default: false
   * @author Stefan Wimmer <stefanwimmer128@gmail.com>
   */
 class ItemFood(name : String, amount : Int, saturation : Float = .6f, isWolfFood : Boolean = false)
@@ -35,16 +39,16 @@ class ItemFood(name : String, amount : Int, saturation : Float = .6f, isWolfFood
     
     /**
       * Returns an ItemStack with specified stackSize
-      * @param i stackSize of ItemStack
+      * @param stackSize stackSize of ItemStack
       * @return ItemStack with specified stackSize
       */
-    def stack(i : Int = 0) : ItemStack =
-        new ItemStack(this, i)
+    def stack(stackSize : Int) : ItemStack =
+        new ItemStack(this, stackSize)
     
     /**
       * Returns an ItemStack with stackSize = 1
-      * @return ItemStack with stackSize = 1
+      * @return ItemStack with specified stackSize
       */
     def stack : ItemStack =
-        stack(0)
+        stack(1)
 }
